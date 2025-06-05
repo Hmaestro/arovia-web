@@ -7,7 +7,7 @@
     <title>AROVIA - Santé connectée pour vos proches</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    
+
 </head>
 
 <body>
@@ -15,22 +15,22 @@
     <header>
         <nav class="container">
             <a href="#" class="logo">
-                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Coeur stylisé avec symbole médical -->
-                    <g fill="#77B28C">
-                        <!-- Partie gauche du coeur/infini -->
-                        <path d="M25,35 C25,25 35,15 45,25 C55,15 65,25 65,35 C65,45 50,60 50,60 C50,60 35,45 25,35 Z"
-                            opacity="0.8" />
-                        <!-- Partie droite du coeur/infini -->
-                        <path d="M35,35 C35,25 45,15 55,25 C65,15 75,25 75,35 C75,45 60,60 60,60 C60,60 45,45 35,35 Z"
-                            opacity="0.9" />
-                        <!-- Croix médicale centrale -->
-                        <rect x="47" y="40" width="6" height="20" fill="white" />
-                        <rect x="42" y="45" width="16" height="6" fill="white" />
-                        <!-- Petit coeur au centre -->
-                        <path d="M45,25 C45,20 50,15 55,20 C60,15 65,20 65,25 C65,30 55,40 55,40 C55,40 45,30 45,25 Z"
-                            fill="#5a9866" />
-                    </g>
+                <img src="images/logo.png" alt="AROVIA Logo" class="logo-icon" />
+                <!-- Coeur stylisé avec symbole médical -->
+                <g fill="#77B28C">
+                    <!-- Partie gauche du coeur/infini -->
+                    <path d="M25,35 C25,25 35,15 45,25 C55,15 65,25 65,35 C65,45 50,60 50,60 C50,60 35,45 25,35 Z"
+                        opacity="0.8" />
+                    <!-- Partie droite du coeur/infini -->
+                    <path d="M35,35 C35,25 45,15 55,25 C65,15 75,25 75,35 C75,45 60,60 60,60 C60,60 45,45 35,35 Z"
+                        opacity="0.9" />
+                    <!-- Croix médicale centrale -->
+                    <rect x="47" y="40" width="6" height="20" fill="white" />
+                    <rect x="42" y="45" width="16" height="6" fill="white" />
+                    <!-- Petit coeur au centre -->
+                    <path d="M45,25 C45,20 50,15 55,20 C60,15 65,20 65,25 C65,30 55,40 55,40 C55,40 45,30 45,25 Z"
+                        fill="#5a9866" />
+                </g>
                 </svg>
                 <span>AROVIA</span>
             </a>
@@ -46,14 +46,20 @@
 
     <!-- Hero Section -->
     <section id="accueil" class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">AROVIA</h1>
-            <p class="slogan fade-in">Santé connectée pour vos proches, même à distance</p>
-            <p class="description fade-in">
-                Une solution numérique qui permet aux expatriés de Madagascar d'organiser et financer
-                des soins médicaux pour leurs familles restées au pays, de manière simple, sécurisée et transparente.
-            </p>
-            <a href="#services" class="cta-button fade-in">Découvrir nos services</a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">AROVIA</h1>
+                <p class="slogan fade-in">Santé connectée pour vos proches, même à distance</p>
+                <p class="description fade-in">
+                    Une solution numérique qui permet aux expatriés de Madagascar d'organiser et financer
+                    des soins médicaux pour leurs familles restées au pays, de manière simple, sécurisée et
+                    transparente.
+                </p>
+                <a href="#services" class="cta-button fade-in">Découvrir nos services</a>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="images/famille.png" />
+            </div>
         </div>
     </section>
 
@@ -63,23 +69,34 @@
             <h2 class="section-title">Ce que nous offrons</h2>
             <div class="services-grid">
                 <div class="service-card fade-in">
-                    <i class="fas fa-user-md"></i>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm6 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z" />
+                    </svg>
                     <h3>Aide médicale directe</h3>
                     <p>Consultations médicales, médicaments essentiels et services d'ambulance pour vos proches à
                         Madagascar.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <i class="fas fa-credit-card"></i>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+                    </svg>
                     <h3>Paiement à distance</h3>
                     <p>Financez les soins directement sans transfert d'argent, en toute sécurité depuis l'étranger.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <i class="fas fa-chart-line"></i>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+                    </svg>
                     <h3>Suivi en temps réel</h3>
                     <p>Suivez l'évolution des prestations et l'état de santé de vos proches en direct.</p>
                 </div>
                 <div class="service-card fade-in">
-                    <i class="fas fa-network-wired"></i>
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.07 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" />
+                    </svg>
                     <h3>Réseau de partenaires</h3>
                     <p>Un réseau établi de professionnels de santé partenaires à travers Madagascar.</p>
                 </div>
@@ -94,7 +111,10 @@
             <div class="features">
                 <div class="feature fade-in">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C14.8,12.4 14.4,13.2 13.7,13.7L12.9,14.3C12.4,14.7 12.4,15.4 12.9,15.8L13.7,16.4C14.4,16.9 14.8,17.7 14.8,18.6V20.1C14.8,21.7 13.4,23.1 11.8,23.1H12.2C13.8,23.1 15.2,21.7 15.2,20.1V18.6C15.2,17.7 15.6,16.9 16.3,16.4L17.1,15.8C17.6,15.4 17.6,14.7 17.1,14.3L16.3,13.7C15.6,13.2 15.2,12.4 15.2,11.5V10C15.2,8.6 13.8,7 12.2,7H11.8Z" />
+                        </svg>
                     </div>
                     <div class="feature-content">
                         <h3>Plus sûr qu'un transfert d'argent</h3>
@@ -104,7 +124,10 @@
                 </div>
                 <div class="feature fade-in">
                     <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M7,2V4H8V18A4,4 0 0,0 12,22A4,4 0 0,0 16,18V4H17V2H7M11,16C10.4,16 10,15.6 10,15C10,14.4 10.4,14 11,14C11.6,14 12,14.4 12,15C12,15.6 11.6,16 11,16M13,12C12.4,12 12,11.6 12,11C12,10.4 12.4,10 13,10C13.6,10 14,10.4 14,11C14,11.6 13.6,12 13,12M11,8C10.4,8 10,7.6 10,7C10,6.4 10.4,6 11,6C11.6,6 12,6.4 12,7C12,7.6 11.6,8 11,8Z" />
+                        </svg>
                     </div>
                     <div class="feature-content">
                         <h3>Plus rapide qu'un appel à un proche</h3>
@@ -114,7 +137,10 @@
                 </div>
                 <div class="feature fade-in">
                     <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5 2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+                        </svg>
                     </div>
                     <div class="feature-content">
                         <h3>Plus humain qu'un simple virement</h3>
@@ -177,15 +203,35 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Email: contact@arovia.com</p>
+                    <p>Email: contact@arovia.care</p>
                     <p>Téléphone: +33 X XX XX XX XX</p>
                 </div>
             </div>
             <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.219-5.169 1.219-5.169s-.219-.438-.219-1.085c0-1.016.219-1.774.219-1.774s.438-.438 1.085-.438c.511 0 .758.383.758.843 0 .513-.219.877-.219 1.234 0 .766.877 1.392 1.905 1.392 2.289 0 4.046-2.414 4.046-5.901 0-3.079-2.205-5.234-5.35-5.234-3.647 0-5.79 2.735-5.79 5.569 0 1.103.424 2.289 .953 2.931.105.127.121.24.09.372-.061.252-.197.790-.225.901-.035.146-.116.177-.268.107-1.002-.466-1.628-1.93-1.628-3.106 0-4.061 2.949-7.784 8.494-7.784 4.464 0 7.944 3.176 7.944 7.417 0 4.424-2.791 7.982-6.66 7.982-1.3 0-2.522-.676-2.938-1.487 0 0-.642 2.445-.799 3.043-.289 1.104-1.069 2.490-1.593 3.341C8.9 23.729 10.417 24.029 12.017 24.029c6.624 0 11.99-5.367 11.99-11.986C24.007 5.367 18.641.001.012.001z" />
+                    </svg>
+                </a>
             </div>
             <p style="margin-top: 2rem; opacity: 0.7;">
                 © 2025 AROVIA. Tous droits réservés.
