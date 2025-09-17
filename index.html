@@ -13,36 +13,27 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="container">
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="AROVIA Logo" class="logo-icon" />
-                <!-- Coeur stylisé avec symbole médical -->
-                <g fill="#77B28C">
-                    <!-- Partie gauche du coeur/infini -->
-                    <path d="M25,35 C25,25 35,15 45,25 C55,15 65,25 65,35 C65,45 50,60 50,60 C50,60 35,45 25,35 Z"
-                        opacity="0.8" />
-                    <!-- Partie droite du coeur/infini -->
-                    <path d="M35,35 C35,25 45,15 55,25 C65,15 75,25 75,35 C75,45 60,60 60,60 C60,60 45,45 35,35 Z"
-                        opacity="0.9" />
-                    <!-- Croix médicale centrale -->
-                    <rect x="47" y="40" width="6" height="20" fill="white" />
-                    <rect x="42" y="45" width="16" height="6" fill="white" />
-                    <!-- Petit coeur au centre -->
-                    <path d="M45,25 C45,20 50,15 55,20 C60,15 65,20 65,25 C65,30 55,40 55,40 C55,40 45,30 45,25 Z"
-                        fill="#5a9866" />
-                </g>
-                </svg>
-                <span>AROVIA</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#avantages">Avantages</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <nav class="container">
+    <a href="#accueil" class="logo">
+      <img src="images/Logo_AROVIA_icon.svg" alt="AROVIA" class="logo-icon" width="40" height="40" />
+      <span>AROVIA</span>
+    </a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#avantages">Avantages</a></li>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
     <!-- Hero Section -->
     <section id="accueil" class="hero">
