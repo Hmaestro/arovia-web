@@ -14,8 +14,8 @@
     <!-- Header -->
     <header>
   <nav class="container">
-    <a href="#accueil" class="logo">
-      <img src="images/Logo_AROVIA_icon.svg" alt="AROVIA" class="logo-icon" width="40" height="40" />
+    <a href="#accueil" class="logo"> 
+      <img src="images/Logo_AROVIA_icon.svg" loading="lazy" alt="AROVIA" class="logo-icon" width="40" height="40" />
       <span>AROVIA</span>
     </a>
 
@@ -39,17 +39,24 @@
     <section id="accueil" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="fade-in">AROVIA</h1>
-                <p class="slogan fade-in">Santé connectée pour vos proches, même à distance</p>
-                <p class="description fade-in">
+                <h1 class="reveal">AROVIA</h1>
+                <p class="slogan reveal">Santé connectée pour vos proches, même à distance</p>
+                <p class="description reveal">
                     Une solution numérique qui permet aux expatriés de Madagascar d'organiser et financer
                     des soins médicaux pour leurs familles restées au pays, de manière simple, sécurisée et
                     transparente.
                 </p>
-                <a href="#services" class="cta-button fade-in">Découvrir nos services</a>
+                <a href="#services" class="cta-button reveal">Découvrir nos services</a>
             </div>
-            <div class="hero-image fade-in">
-                <img src="images/famille.png" />
+            <div class="hero-image reveal">
+                <img 
+                    src="images/famille.png" 
+                    alt="Famille souriante à la maison"
+                    width="1200" height="900"
+                    sizes="(max-width: 992px) 100vw, 50vw"
+                    decoding="async"
+                    fetchpriority="high"
+                />
             </div>
         </div>
     </section>
@@ -59,7 +66,7 @@
         <div class="container">
             <h2 class="section-title">Ce que nous offrons</h2>
             <div class="services-grid">
-                <div class="service-card fade-in">
+                <div class="service-card reveal">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm6 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z" />
@@ -68,7 +75,7 @@
                     <p>Consultations médicales, médicaments essentiels et services d'ambulance pour vos proches à
                         Madagascar.</p>
                 </div>
-                <div class="service-card fade-in">
+                <div class="service-card reveal">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
@@ -76,14 +83,14 @@
                     <h3>Paiement à distance</h3>
                     <p>Financez les soins directement sans transfert d'argent, en toute sécurité depuis l'étranger.</p>
                 </div>
-                <div class="service-card fade-in">
+                <div class="service-card reveal">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
                     </svg>
                     <h3>Suivi en temps réel</h3>
                     <p>Suivez l'évolution des prestations et l'état de santé de vos proches en direct.</p>
                 </div>
-                <div class="service-card fade-in">
+                <div class="service-card reveal">
                     <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.07 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z" />
@@ -100,7 +107,7 @@
         <div class="container">
             <h2 class="section-title">Pourquoi AROVIA ?</h2>
             <div class="features">
-                <div class="feature fade-in">
+                <div class="feature reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24">
                             <path
@@ -113,7 +120,7 @@
                             ou de mauvaise utilisation.</p>
                     </div>
                 </div>
-                <div class="feature fade-in">
+                <div class="feature reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24">
                             <path
@@ -126,7 +133,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="feature fade-in">
+                <div class="feature reveal">
                     <div class="feature-icon">
                         <svg viewBox="0 0 24 24">
                             <path
@@ -146,7 +153,7 @@
     <section id="apropos" class="section">
         <div class="container">
             <h2 class="section-title">Qui sommes-nous ?</h2>
-            <div class="about-content fade-in">
+            <div class="about-content reveal">
                 <p>
                     <strong>Une initiative née de la diaspora, au service de la santé familiale à Madagascar.</strong>
                 </p>
@@ -165,7 +172,7 @@
     <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contactez-nous</h2>
-            <div class="about-content fade-in">
+            <div class="about-content reveal">
                 <p>
                     Prêt à offrir une tranquillité d'esprit à votre famille ?
                     Contactez-nous pour découvrir comment AROVIA peut vous aider.
@@ -230,53 +237,140 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+   <script>
+  // --- Smooth scrolling + fermeture du menu ---
+  function smoothScrollTo(hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.15)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
-            }
-        });
+  // Liens internes: smooth + ferme le menu si ouvert
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const hash = a.getAttribute('href');
+      if (hash.length > 1) {
+        e.preventDefault();
+        smoothScrollTo(hash);
+        closeMobileNav(); // ferme au clic d’un lien
+      }
+    });
+  });
 
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
+  // --- Mobile nav toggle ---
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks  = document.querySelector('.nav-links');
+  const header    = document.querySelector('header');
+  const FOCUSABLE = 'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animationDelay = '0s';
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, observerOptions);
+  function openMobileNav() {
+    navLinks.classList.add('open');
+    navToggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('no-scroll');
+    // focus management (premier lien)
+    const first = navLinks.querySelector(FOCUSABLE);
+    first && first.focus();
+  }
 
-        // Observe all elements that should animate
-        document.querySelectorAll('.service-card, .feature, .about-content').forEach(el => {
-            observer.observe(el);
-        });
-    </script>
+  function closeMobileNav() {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('no-scroll');
+    navToggle.focus();
+  }
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    expanded ? closeMobileNav() : openMobileNav();
+  });
+
+  // Fermer avec Échap
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+      closeMobileNav();
+    }
+  });
+
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      header.style.background = 'rgba(255, 255, 255, 0.98)';
+      header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.15)';
+    } else {
+      header.style.background = 'rgba(255, 255, 255, 0.95)';
+      header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.1)';
+    }
+  });
+
+  // --- Animations: utiliser .reveal + .is-visible pour éviter les replays erratiques ---
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('is-visible');
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+   // --- Tab bar: état actif + scroll ---
+  const tabs = Array.from(document.querySelectorAll('.mobile-tabbar .tab'));
+  const sections = tabs.map(t => document.querySelector(t.getAttribute('href'))).filter(Boolean);
+
+  function setActiveTabByHash(hash){
+    tabs.forEach(t => t.setAttribute('aria-selected', String(t.getAttribute('href') === hash)));
+  }
+
+  // Click: smooth + active
+  tabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      const hash = tab.getAttribute('href');
+      if (hash && hash.startsWith('#')) {
+        e.preventDefault();
+        setActiveTabByHash(hash);
+        // réutilise ta fonction existante si dispo
+        if (typeof smoothScrollTo === 'function') smoothScrollTo(hash);
+        else document.querySelector(hash)?.scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+
+  // Scroll: active en fonction de la section visible
+  const tabObserver = new IntersectionObserver((entries) => {
+    // on prend l’entrée la plus “centrée”
+    const visible = entries
+      .filter(e => e.isIntersecting)
+      .sort((a,b) => Math.abs(0.5 - visRatio(b)) - Math.abs(0.5 - visRatio(a)))[0];
+
+    if (visible) {
+      const id = '#'+visible.target.id;
+      setActiveTabByHash(id);
+    }
+  }, { root: null, threshold: [0.25, 0.5, 0.75], rootMargin: '-20% 0px -40% 0px' });
+
+  function visRatio(entry){ return entry.intersectionRatio || 0; }
+
+  sections.forEach(sec => tabObserver.observe(sec));
+  
+</script>
+
+<nav class="mobile-tabbar" role="tablist" aria-label="Navigation mobile">
+  <a href="#accueil"   role="tab" aria-selected="true"  class="tab">
+    <i class="fa-solid fa-house"></i><span>Accueil</span>
+  </a>
+  <a href="#services"  role="tab" aria-selected="false" class="tab">
+    <i class="fa-solid fa-stethoscope"></i><span>Services</span>
+  </a>
+  <a href="#avantages" role="tab" aria-selected="false" class="tab">
+    <i class="fa-solid fa-star"></i><span>Avantages</span>
+  </a>
+  <a href="#apropos"   role="tab" aria-selected="false" class="tab">
+    <i class="fa-solid fa-circle-info"></i><span>À propos</span>
+  </a>
+  <a href="#contact"   role="tab" aria-selected="false" class="tab">
+    <i class="fa-solid fa-envelope"></i><span>Contact</span>
+  </a>
+</nav>
+
 </body>
 
 </html>
