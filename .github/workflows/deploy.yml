@@ -1,0 +1,23 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.AROVIA_FTP_SERVER }}
+          username: ${{ secrets.AROVIA_FTP_USERNAME }}
+          password: ${{ secrets.AROVIA_FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /public_html
+          git-ftp-args: --insecure
