@@ -12,10 +12,18 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Deploy via FTP
+      - name: Deploy Arovia App
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
           server: ${{ secrets.AROVIA_FTP_SERVER }}
+          username: ${{ secrets.AROVIA_FTP_USERNAME }}
+          password: ${{ secrets.AROVIA_FTP_PASSWORD }}
+          local-dir: ./
+          git-ftp-args: --insecure
+      - name: Deploy Arovia care
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        with:
+          server: ${{ secrets.AROVIA_CARE_FTP_SERVER }}
           username: ${{ secrets.AROVIA_FTP_USERNAME }}
           password: ${{ secrets.AROVIA_FTP_PASSWORD }}
           local-dir: ./
